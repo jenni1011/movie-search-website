@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!--font cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css" />
+    <!--js file link-->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <div class="conatiner">
+             <p>Movie<span>Hub.</span></p>   
+        </div>
+    </div>
+    <!--search container-->
+    <div class="search-container">
+        <div class="search-element">
+            <h3>Search Movie:</h3>
+            <input text="text" class="form-control" placeholder="Search with Movie Title..." id="movie-search-box"
+                onkeyup="findMovies()" onclick="findMovies()">
+            <div class="search-list" id="search-list">
+                <div class="search-list-item">
+                    <div class="search-item-thumbnail">
+                        <img src="medium-cover.jpg">
+                    </div>
+                    <div class="search-item-info">
+                        <h3>Love Again</h3>
+                        <p>2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of search container-->
+    <!--search result container-->
+    <div class="container">
+        <div class="result-container">
+            <div class="result-grid" id="result-grid">
+                <!--movie infromation-->
+                <div class="movie-poster">
+                    <img src="medium-cover.jpg" alt="movie poster">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Love Again</h3>
+                    <ul class="movie-misc-info">
+                        <li class="year">Year: 2023</li>
+                        <li class="rated">Ratings: PG-13</li>
+                        <li class="released">Released: 05 May 2023</li>
+                    </ul>
+                    <p class = "genre"><b>Genre:</b> Comedy, Drama, Romance</p>
+                    <p class = "writer"><b>Writer:</b> James C. Strouse</p>
+                    <p class = "actors"><b>Cast: </b>Priyanka Chopra Jonas, Sam Heughan, Céline Dion</p>
+                    <p class = "plot"><b>Summary:</b> A young woman tries to ease the pain of her fiancé's death by sending romantic texts to his old cell phone number, and forms a connection with the man the number has been reassigned to.</p>
+                    <p class = "language"><b>Language:</b> English</p>
+                    <p class = "awards"><b><i class = "fas fa-award"></i></b> N/A</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of search result container-->
+</body>
+
+</html>
